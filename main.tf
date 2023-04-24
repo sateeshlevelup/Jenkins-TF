@@ -9,3 +9,12 @@ tags = {
     Name = "TF-Instance"
 }
 }
+
+resource "aws_s3_bucket" "s3terra" {
+  bucket = "my-tf-test-bucket98765"
+
+  tags = {
+    Name        = "Bucket98765"
+    Environment = "Dev"
+  }
+}
